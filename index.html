@@ -3,20 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Web page title</title>
-
-    <!-- The following line references an external css file -->
-    <link href="css/styles.css" rel="stylesheet">
+    <title>CPSC 447 Project</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div>
-    <h3> Hello, Sanjar!</h3>
-    <h1>FUCK BullSHIT!!!</h1>
-</div>
-
-    <!-- Load external JS files -->
+    <script src="js/d3.min.js"></script>
     <script src="js/main.js"></script>
+
+    <svg width="400" height="150">
+        <!-- Rectangle (x and y specify the coordinates of the upper-left corner -->
+        <rect x="0" y="0" width="70" height="50" fill="blue" />
+    
+        <!-- Circle: cx and cy specify the coordinates of the center and r the radius -->
+        <circle cx="185" cy="5" r="25" fill="green" />
+    
+        <!-- Ellipse: rx and ry specify separate radius values -->
+        <ellipse cx="45" cy="25" rx="15" ry="25" fill="purple" />
+    
+        <!-- Line: x1,y1 and x2,y2 specify the coordinates of the ends of the line -->
+        <line x1="185" y1="5" x2="230" y2="40" stroke="gray" stroke-width="5" />
+    
+        <!-- Text: x specifies the position of the left edge and y specifies the vertical position of the baseline -->
+        <text x="260" y="25" fill="red">SVG Text</text>
+    
+    </svg>
+
 </body>
 
 </html>
